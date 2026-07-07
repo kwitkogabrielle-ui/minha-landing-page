@@ -1,0 +1,49 @@
+const WA = "https://wa.me/5548984730581?text=Ol%C3%A1%2C%20Dra.%20Gabrielle!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20personalizada.";
+
+export default function Localizacao() {
+  return (
+    <section id="localizacao">
+      <div className="loc-grid">
+        <div>
+          <div className="section-eyebrow" style={{ marginBottom: "1.5rem" }}><span>Contato</span></div>
+          <h2 className="section-title" style={{ marginBottom: "2.5rem" }}>
+            Estamos em<br /><em style={{ fontStyle: "italic", color: "var(--rose)" }}>Florianópolis</em>
+          </h2>
+          <div className="loc-items">
+            <div className="loc-item">
+              <div className="loc-icon">📍</div>
+              <div>
+                <div className="loc-item-label">Endereço</div>
+                <div className="loc-item-val">Rua Lauro Linhares, 728<br />Trindade, Florianópolis – SC</div>
+                <a href="https://maps.google.com/?q=Rua+Lauro+Linhares+728+Florianopolis+SC" target="_blank" className="loc-item-link">Ver no mapa →</a>
+              </div>
+            </div>
+            <div className="loc-item">
+              <div className="loc-icon">💬</div>
+              <div>
+                <div className="loc-item-label">WhatsApp</div>
+                <div className="loc-item-val">(48) 98473-0581</div>
+                <a href="https://wa.me/5548984730581?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" className="loc-item-link">Enviar mensagem →</a>
+              </div>
+            </div>
+            <div className="loc-item">
+              <div className="loc-icon">📱</div>
+              <div>
+                <div className="loc-item-label">Redes Sociais</div>
+                <div className="loc-item-val">@dragabriellekwitko</div>
+                <a href="https://www.instagram.com/dragabriellekwitko" target="_blank" className="loc-item-link" style={{ display: "block" }}>Ver Instagram →</a>
+                <a href="https://www.facebook.com/profile.php?id=100084080649001" target="_blank" className="loc-item-link" style={{ display: "block", marginTop: "0.25rem" }}>Ver Facebook →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="loc-cta-box">
+          <h3>Pronta para o seu<br /><em style={{ fontStyle: "italic", color: "var(--rose-dark)" }}>melhor resultado?</em></h3>
+          <p>Agende sua avaliação personalizada. A Gabrielle vai entender o que você deseja e criar o plano ideal para você.</p>
+          <a href={WA} target="_blank" className="btn-primary" style={{ width: "100%" }}>Agendar avaliação</a>
+        </div>
+      </div>
+    </section>
+  );
+}
