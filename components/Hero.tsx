@@ -34,7 +34,7 @@ export default function Hero() {
         </h1>
 
         <p className="hero-desc">
-          Dra. Gabrielle Kwitko combina técnica médica avançada e olhar estético refinado para
+          Dra. Gabrielle Kwitko combina técnica avançada e olhar estético refinado para
           resultados que valorizam quem você já é — sem exageros, com naturalidade.
         </p>
 
