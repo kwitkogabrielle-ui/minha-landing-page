@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-const WA = "https://wa.me/5548984730581?text=Ol%C3%A1%2C%20vi%20os%20resultados%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
+const WA = "https://wa.me/5548984730581?text=" + encodeURIComponent("Olá, vim pelo Google, vi os resultados e gostaria de agendar uma avaliação.");
 
 const resultados = [
-  { src: "/images/antes-depois-botox-testa.png", alt: "Antes e depois de botox na testa",           label: "Toxina Botulínica · Testa" },
+  { src: "/images/antes-depois-botox-testa.png", alt: "Antes e depois de toxina botulínica na testa", label: "Toxina Botulínica · Testa" },
   { src: "/images/antes-depois-olheiras.jpg",    alt: "Antes e depois de preenchimento de olheiras", label: "Preenchimento de Olheiras" },
   { src: "/images/antes-depois-labios.png",      alt: "Antes e depois de preenchimento labial",      label: "Preenchimento Labial" },
 ];

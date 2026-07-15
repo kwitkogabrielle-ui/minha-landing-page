@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const WA = "https://wa.me/5548984730581?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Gabrielle.";
+const WA = "https://wa.me/5548984730581?text=" + encodeURIComponent("Olá, vim pelo Google e gostaria de agendar uma avaliação com a Dra. Gabrielle.");
 
 const WA_SVG = (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -12,7 +12,7 @@ const WA_SVG = (
 const carouselItems = [
   { src: "/images/antes-depois-labios.png",     alt: "Resultado preenchimento labial", tag: "Lábios" },
   { src: "/images/antes-depois-olheiras.jpg",   alt: "Resultado olheiras",             tag: "Olheiras" },
-  { src: "/images/antes-depois-botox-testa.png", alt: "Resultado botox",               tag: "Botox" },
+  { src: "/images/antes-depois-botox-testa.png", alt: "Resultado toxina botulínica",   tag: "Toxina Botulínica" },
 ];
 
 /* duplicamos para o loop infinito ser seamless */

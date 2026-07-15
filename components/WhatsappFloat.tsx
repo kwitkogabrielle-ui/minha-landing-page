@@ -1,4 +1,4 @@
-const WA = "https://wa.me/5548984730581?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
+const WA = "https://wa.me/5548984730581?text=" + encodeURIComponent("Olá, vim pelo Google e gostaria de agendar uma avaliação.");
 
 export default function WhatsappFloat() {
   return (
