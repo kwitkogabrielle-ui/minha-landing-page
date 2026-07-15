@@ -1,4 +1,4 @@
-const WA = "https://wa.me/5548984730581?text=Ol%C3%A1%2C%20Dra.%20Gabrielle!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20personalizada.";
+const WA = "https://wa.me/5548984730581?text=" + encodeURIComponent("Olá, Dra. Gabrielle! Vim pelo Google e gostaria de agendar uma avaliação personalizada.");
 
 export default function Localizacao() {
   return (
@@ -23,7 +23,7 @@ export default function Localizacao() {
               <div>
                 <div className="loc-item-label">WhatsApp</div>
                 <div className="loc-item-val">(48) 98473-0581</div>
-                <a href="https://wa.me/5548984730581?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" className="loc-item-link">Enviar mensagem →</a>
+                <a href={WA} target="_blank" className="loc-item-link">Enviar mensagem →</a>
               </div>
             </div>
             <div className="loc-item">

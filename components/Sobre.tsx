@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-const WA = "https://wa.me/5548984730581?text=Ol%C3%A1%2C%20Dra.%20Gabrielle!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
+const WA = "https://wa.me/5548984730581?text=" + encodeURIComponent("Olá, Dra. Gabrielle! Vim pelo Google e gostaria de agendar uma avaliação.");
 
-const tags = ["Injetáveis", "Harmonização Facial", "Harmonização Corporal", "Botox", "Bioestimuladores"];
+const tags = ["Injetáveis", "Harmonização Facial", "Harmonização Corporal", "Toxina Botulínica", "Bioestimuladores"];
 
 export default function Sobre() {
   return (

@@ -1,4 +1,4 @@
-const facial = ["Botox", "Preenchimento de Olheiras", "Preenchimento de Sulco Nasogeniano", "Preenchimento de Mento", "Preenchimento de Malar", "Preenchimento Labial", "Preenchimento de Mandíbula", "Rinomodelação", "Bioestimulador"];
+const facial = ["Toxina Botulínica", "Preenchimento de Olheiras", "Preenchimento de Sulco Nasogeniano", "Preenchimento de Mento", "Preenchimento de Malar", "Preenchimento Labial", "Preenchimento de Mandíbula", "Rinomodelação", "Bioestimulador"];
 const corporal = ["Harmonização Glútea", "Harmonização de Mamas", "Escleroterapia"];
 const contato = [
   { href: "https://wa.me/5548984730581", label: "(48) 98473-0581" },
