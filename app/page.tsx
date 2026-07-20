@@ -10,14 +10,8 @@ import Localizacao from "@/components/Localizacao";
 import CtaFinal from "@/components/CtaFinal";
 import Footer from "@/components/Footer";
 import WhatsappFloat from "@/components/WhatsappFloat";
-import Bloqueio from "@/components/Bloqueio";
-
-// Pendência de pagamento — trocar para false pra liberar o site.
-const BLOQUEADO: boolean = true;
 
 export default function Home() {
-  if (BLOQUEADO) return <Bloqueio />;
-
   return (
     <>
       <Nav />
