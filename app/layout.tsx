@@ -22,9 +22,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Gabrielle Kwitko — Harmonização Facial e Corporal | Florianópolis",
+  title: "Dra. Gabrielle Kwitko — Harmonização Facial e Corporal | Florianópolis",
   description:
-    "Gabrielle Kwitko, enfermeira injetabilista especialista em harmonização facial e corporal em Florianópolis-SC. Botox, preenchimento, olheiras, glútea e mais.",
+    "Dra. Gabrielle Kwitko, enfermeira injetabilista especialista em harmonização facial e corporal em Florianópolis-SC. Botox, preenchimento, olheiras, glútea e mais.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

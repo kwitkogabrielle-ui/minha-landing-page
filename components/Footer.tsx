@@ -2,8 +2,8 @@ const facial = ["Toxina Botulínica", "Preenchimento de Olheiras", "Preenchiment
 const corporal = ["Harmonização Glútea", "Harmonização de Mamas", "Escleroterapia"];
 const contato = [
   { href: "https://wa.me/5548984730581", label: "(48) 98473-0581" },
-  { href: "#", label: "Rua Lauro Linhares, 728" },
-  { href: "#", label: "Trindade, Florianópolis – SC" },
+  { href: "#", label: "R. Delminda Silveira, 827 – sala 206" },
+  { href: "#", label: "Agronômica, Florianópolis – SC · 88025-500" },
   { href: "https://www.instagram.com/dragabriellekwitko", label: "@dragabriellekwitko" },
 ];
 
@@ -12,8 +12,9 @@ export default function Footer() {
     <footer>
       <div className="footer-grid">
         <div>
-          <div className="footer-logo"><span>Gabrielle</span> Kwitko</div>
+          <div className="footer-logo">Dra. <span>Gabrielle</span> Kwitko</div>
           <p className="footer-desc">Especialista em injetáveis e harmonização facial e corporal. Florianópolis, Santa Catarina.</p>
+          <p className="footer-desc" style={{ marginTop: "0.75rem" }}>Enfermeira Esteta · COREN 652.755</p>
         </div>
 
         <div>

@@ -19,7 +19,7 @@ export default function CtaFinal() {
         </h2>
         <p className="cta-desc">
           Resultados naturais, técnica avançada e um olhar estético que respeita a sua singularidade.
-          Venha conhecer a Gabrielle Kwitko em Florianópolis.
+          Venha conhecer a Dra. Gabrielle Kwitko em Florianópolis.
         </p>
         <div className="cta-btns">
           <a href={WA} target="_blank" className="btn-primary">

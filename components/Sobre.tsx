@@ -24,7 +24,7 @@ export default function Sobre() {
             Técnica e precisão.<br />
             <em style={{ fontStyle: "italic", color: "var(--rose)" }}>Olhar estético.</em>
           </h2>
-          <p>Gabrielle Kwitko é enfermeira (COREN 652.755) especialista em procedimentos injetáveis e harmonização facial e corporal, com clínica em Florianópolis, SC.</p>
+          <p>A Dra. Gabrielle Kwitko é enfermeira (COREN 652.755) especialista em procedimentos injetáveis e harmonização facial e corporal, com clínica em Florianópolis, SC.</p>
           <p>Com formação sólida e atuação dedicada à estética avançada, ela combina técnica apurada com sensibilidade artística para entregar resultados que respeitam a beleza única de cada paciente.</p>
           <p>Seu diferencial está na personalização: cada tratamento é planejado individualmente, levando em conta proporção, harmonia e o que faz sentido para aquele rosto e aquele corpo.</p>
           <div className="sobre-tags">

@@ -27,7 +27,7 @@ export default function Nav() {
   return (
     <nav className={hidden ? "nav-hidden" : ""}>
       <div className="nav-inner">
-        <div className="nav-logo"><span>Gabrielle</span> Kwitko</div>
+        <div className="nav-logo">Dra. <span>Gabrielle</span> Kwitko</div>
         <div className="nav-links">
           <a href="#servicos">Serviços</a>
           <a href="#sobre">Sobre</a>
