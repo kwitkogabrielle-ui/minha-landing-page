@@ -14,8 +14,8 @@ export default function Localizacao() {
               <div className="loc-icon">📍</div>
               <div>
                 <div className="loc-item-label">Endereço</div>
-                <div className="loc-item-val">Rua Lauro Linhares, 728<br />Trindade, Florianópolis – SC</div>
-                <a href="https://maps.google.com/?q=Rua+Lauro+Linhares+728+Florianopolis+SC" target="_blank" className="loc-item-link">Ver no mapa →</a>
+                <div className="loc-item-val">R. Delminda Silveira, 827 – sala 206<br />Centro Empresarial Prof. Silvio Coelho dos Santos<br />Agronômica, Florianópolis – SC · 88025-500</div>
+                <a href="https://maps.google.com/?q=R.+Delminda+Silveira+827+Agronomica+Florianopolis+SC+88025-500" target="_blank" className="loc-item-link">Ver no mapa →</a>
               </div>
             </div>
             <div className="loc-item">
@@ -40,7 +40,7 @@ export default function Localizacao() {
 
         <div className="loc-cta-box">
           <h3>Pronta para o seu<br /><em style={{ fontStyle: "italic", color: "var(--rose-dark)" }}>melhor resultado?</em></h3>
-          <p>Agende sua avaliação personalizada. A Gabrielle vai entender o que você deseja e criar o plano ideal para você.</p>
+          <p>Agende sua avaliação personalizada. A Dra. Gabrielle vai entender o que você deseja e criar o plano ideal para você.</p>
           <a href={WA} target="_blank" className="btn-primary" style={{ width: "100%" }}>Agendar avaliação</a>
         </div>
       </div>
