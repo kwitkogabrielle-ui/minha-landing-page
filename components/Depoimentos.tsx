@@ -1,6 +1,6 @@
 const depoimentos = [
   { texto: "Fiz o preenchimento de olheiras e o resultado ficou incrível! Super natural, parece que descansou semanas. A Dra. Gabrielle é atenciosa e faz você se sentir segura do início ao fim.", autor: "Ana C." },
-  { texto: "Finalmente fiz o botox que eu adiava há anos! A Dra. Gabrielle explicou tudo, tirou todas as minhas dúvidas. O resultado foi delicado e exatamente o que eu queria. Voltarei com certeza.", autor: "Mariana P." },
+  { texto: "Finalmente fiz a aplicação para as linhas de expressão que eu adiava há anos! A Dra. Gabrielle explicou tudo, tirou todas as minhas dúvidas. O resultado foi delicado e exatamente o que eu queria. Voltarei com certeza.", autor: "Mariana P." },
   { texto: "Ela tem um olhar diferenciado para estética. Não é o tipo de profissional que coloca muito — ela respeita a sua beleza natural. Me sinto renovada sem parecer que fiz algo. Recomendo demais!", autor: "Juliana S." },
 ];
 

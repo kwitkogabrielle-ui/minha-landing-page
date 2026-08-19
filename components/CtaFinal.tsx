@@ -18,7 +18,7 @@ export default function CtaFinal() {
           <em>bonita e confiante.</em>
         </h2>
         <p className="cta-desc">
-          Resultados naturais, técnica avançada e um olhar estético que respeita a sua singularidade.
+          Foco em resultado natural, técnica avançada e um olhar estético que respeita a sua singularidade.
           Venha conhecer a Dra. Gabrielle Kwitko em Florianópolis.
         </p>
         <div className="cta-btns">

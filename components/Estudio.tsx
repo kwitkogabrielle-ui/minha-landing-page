@@ -19,7 +19,7 @@ export default function Estudio() {
 
       <div className="estudio-grid container">
         <div className="estudio-main">
-          <Image src="/images/studio-placa.png" alt="Consultório Dra. Gabrielle Kwitko" fill sizes="(max-width: 768px) 100vw, 55vw" style={{ objectFit: "cover" }} />
+          <Image src="/images/studio-placa.png" alt="Consultório da Dra. Gabrielle Kwitko" fill sizes="(max-width: 768px) 100vw, 55vw" style={{ objectFit: "cover" }} />
         </div>
         {small.map(({ src, alt }) => (
           <div key={src} className="estudio-small">

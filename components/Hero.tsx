@@ -1,6 +1,8 @@
 import Image from "next/image";
+import { PERFIL_GOOGLE } from "./dados";
 
 const WA = "https://wa.me/5548984730581?text=" + encodeURIComponent("Olá, vim pelo Google e gostaria de agendar uma avaliação com a Dra. Gabrielle.");
+
 
 const WA_SVG = (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -12,7 +14,7 @@ const WA_SVG = (
 const carouselItems = [
   { src: "/images/antes-depois-labios.png",     alt: "Resultado preenchimento labial", tag: "Lábios" },
   { src: "/images/antes-depois-olheiras.jpg",   alt: "Resultado olheiras",             tag: "Olheiras" },
-  { src: "/images/antes-depois-botox-testa.png", alt: "Resultado toxina botulínica",   tag: "Toxina Botulínica" },
+  { src: "/images/antes-depois-linhas-expressao-testa.png", alt: "Resultado de tratamento para linhas de expressão na testa", tag: "Linhas de Expressão" },
 ];
 
 /* duplicamos para o loop infinito ser seamless */
@@ -34,13 +36,14 @@ export default function Hero() {
         </h1>
 
         <p className="hero-desc">
-          Dra. Gabrielle Kwitko combina técnica avançada e olhar estético refinado para
+          A Dra. Gabrielle Kwitko combina técnica avançada e olhar estético refinado para
           resultados que valorizam quem você já é — sem exageros, com naturalidade.
         </p>
 
         {/* Mobile only: marquee auto-scroll */}
         <div className="hero-results-strip">
           <div className="hero-result-label">Resultados reais</div>
+          <p className="hero-result-aviso">Imagens de pacientes reais, publicadas com autorização. Resultados individuais podem variar.</p>
           <div className="hero-results-track">
             {marqueeItems.map(({ src, alt, tag }, i) => (
               <div key={i} className="hero-result-card" aria-hidden={i >= carouselItems.length || undefined}>
@@ -58,13 +61,13 @@ export default function Hero() {
           <a href="#servicos" className="btn-outline">Ver Tratamentos</a>
         </div>
 
-        <div className="hero-trust">
+        <a href={PERFIL_GOOGLE} target="_blank" className="hero-trust">
           <span className="hero-stars">★★★★★</span>
           <div className="hero-trust-text">
             <strong>4.9</strong>
             <span>· 70 avaliações no Google</span>
           </div>
-        </div>
+        </a>
       </div>
 
       <div className="hero-image">

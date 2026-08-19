@@ -361,3 +361,67 @@ footer { background: #1a0a06; padding: 3rem 5% 1.5rem; }
   .whatsapp-float { width: 46px; height: 46px; bottom: 1.25rem; right: 1.25rem; }
   .whatsapp-float svg { width: 22px; height: 22px; }
 }
+
+/* ── AVISOS DE CONFORMIDADE (resultados individuais) ── */
+.resultados-aviso {
+  font-size: 0.72rem; line-height: 1.7; color: var(--muted); max-width: 640px;
+  margin: 1rem auto 0; font-style: italic;
+}
+.hero-result-aviso {
+  font-size: 0.6rem; line-height: 1.5; color: var(--muted);
+  margin: -0.25rem 0 0.625rem; font-style: italic;
+}
+
+/* ── RODAPÉ LEGAL ── */
+.footer-legal {
+  max-width: 1160px; margin: 0 auto 1.5rem; padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  display: flex; flex-direction: column; gap: 0.5rem;
+}
+.footer-legal p { font-size: 0.7rem; line-height: 1.9; color: rgba(255,255,255,0.28); max-width: 780px; }
+
+/* ── BANNER DE COOKIES (LGPD) ── */
+.cookie-banner {
+  position: fixed; z-index: 200; left: 1.25rem; right: 1.25rem; bottom: 1.25rem;
+  max-width: 640px; background: var(--white);
+  border: 1px solid var(--border); border-left: 3px solid var(--rose);
+  box-shadow: 0 20px 60px rgba(44,24,16,0.18);
+  padding: 1.25rem 1.5rem;
+  display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;
+}
+.cookie-texto { font-size: 0.8rem; line-height: 1.8; color: var(--text); flex: 1 1 280px; }
+.cookie-texto a { color: var(--rose-dark); font-weight: 700; text-decoration: underline; }
+.cookie-btns { display: flex; gap: 0.625rem; flex-shrink: 0; }
+.cookie-banner button {
+  font-family: inherit; font-size: 0.72rem; font-weight: 700; letter-spacing: 1px;
+  text-transform: uppercase; padding: 0.7rem 1.4rem; border-radius: 50px;
+  cursor: pointer; transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.cookie-btn-aceitar { background: var(--rose); color: var(--white); border: 1.5px solid var(--rose); }
+.cookie-btn-aceitar:hover { background: var(--rose-dark); border-color: var(--rose-dark); transform: translateY(-1px); }
+.cookie-btn-recusar { background: transparent; color: var(--muted); border: 1.5px solid var(--border); }
+.cookie-btn-recusar:hover { color: var(--text); border-color: var(--muted); }
+
+/* ── PÁGINAS LEGAIS ── */
+.legal { background: var(--cream); padding: clamp(2.5rem, 7vw, 5rem) 5%; }
+.legal-inner { max-width: 760px; margin: 0 auto; }
+.legal h1 { font-family: var(--font-serif); font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 700; line-height: 1.25; margin-top: 1.5rem; }
+.legal h2 { font-family: var(--font-serif); font-size: clamp(1.05rem, 2.4vw, 1.3rem); font-weight: 600; color: var(--rose-dark); margin-top: 2.5rem; margin-bottom: 0.625rem; }
+.legal p, .legal li { font-size: 0.9rem; line-height: 1.95; color: var(--text); }
+.legal p + p { margin-top: 0.875rem; }
+.legal ul { margin: 0.875rem 0 0 1.1rem; display: flex; flex-direction: column; gap: 0.625rem; }
+.legal a { color: var(--rose-dark); font-weight: 700; text-decoration: underline; }
+.legal-meta { font-size: 0.72rem !important; letter-spacing: 1px; text-transform: uppercase; color: var(--muted) !important; margin-top: 0.625rem; }
+.legal-voltar {
+  display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--rose) !important; text-decoration: none !important;
+}
+.legal-inner > .legal-voltar:last-child { margin-top: 3rem; }
+
+@media (max-width: 640px) {
+  .cookie-banner { left: 0; right: 0; bottom: 0; max-width: none; padding: 1.1rem 5% 1.25rem; border-left: none; border-top: 3px solid var(--rose); gap: 1rem; }
+  .cookie-btns { width: 100%; }
+  .cookie-banner button { flex: 1; }
+  /* sobe o botão do WhatsApp só enquanto o banner estiver na tela */
+  body:has(.cookie-banner) .whatsapp-float { bottom: 11rem; }
+}
