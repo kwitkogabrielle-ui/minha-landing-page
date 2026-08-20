@@ -2,7 +2,7 @@
 import { useSyncExternalStore } from "react";
 import Script from "next/script";
 
-const GTM_ID = "GTM-WFDHVH73";
+const GTM_ID = "GTM-PXW8PTT5";
 const CHAVE = "gk-consentimento-cookies";
 
 type Escolha = "aceito" | "recusado" | null;
