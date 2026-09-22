@@ -55,8 +55,9 @@ nav {
   border-bottom: 1px solid var(--border);
 }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 1.1rem 5%; }
-.nav-logo { font-family: var(--font-serif); font-size: 1.1rem; font-weight: 600; color: var(--text); letter-spacing: 0.3px; }
-.nav-logo span { color: var(--rose); }
+.nav-logo { display: block; line-height: 0; }
+.nav-logo img { height: 48px; width: auto; }
+@media (max-width: 768px) { .nav-logo img { height: 38px; } }
 .nav-links { display: flex; align-items: center; gap: 2rem; }
 .nav-links a { font-size: 0.78rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); transition: color 0.2s; }
 .nav-links a:hover { color: var(--rose); }
@@ -152,6 +153,35 @@ nav {
 .servico-card p { font-size: 0.84rem; color: var(--muted); line-height: 1.7; margin-bottom: 1.25rem; }
 .servico-link { font-size: 0.7rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--rose); border-bottom: 1px solid var(--rose-light); padding-bottom: 1px; transition: border-color 0.2s; }
 .servico-card:hover .servico-link { border-color: var(--rose); }
+
+/* TESTE: detalhes expansíveis dos procedimentos */
+.servico-detalhes { border-top: 1px solid var(--border); margin-bottom: 1rem; }
+.servico-detalhes summary {
+  list-style: none; cursor: pointer; user-select: none;
+  display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;
+  padding: 0.75rem 0; font-size: 0.7rem; font-weight: 700; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--muted); transition: color 0.2s;
+}
+.servico-detalhes summary::-webkit-details-marker { display: none; }
+.servico-detalhes summary:hover,
+.servico-detalhes[open] summary { color: var(--rose); }
+.servico-detalhes summary:focus-visible { outline: 2px solid var(--rose); outline-offset: 3px; border-radius: 2px; }
+.servico-seta {
+  width: 26px; height: 26px; border-radius: 50%; background: var(--blush); color: var(--rose);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  transition: transform 0.25s ease, background 0.2s;
+}
+.servico-seta svg { width: 12px; height: 12px; }
+.servico-detalhes summary:hover .servico-seta { background: var(--blush2); }
+.servico-detalhes[open] .servico-seta { transform: rotate(180deg); background: var(--rose-light); }
+.servico-detalhes-corpo { padding-bottom: 0.25rem; animation: servico-abrir 0.25s ease; }
+.servico-detalhes-corpo dt { font-size: 0.62rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--rose); margin-bottom: 0.25rem; }
+.servico-detalhes-corpo dd { font-size: 0.82rem; color: var(--text); line-height: 1.7; margin-bottom: 0.875rem; }
+.servico-detalhes-corpo dd:last-child { margin-bottom: 0; }
+@keyframes servico-abrir {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: none; }
+}
 
 /* ── SOBRE ── */
 #sobre { background: var(--blush); padding: clamp(3rem,8vw,7rem) 5%; }

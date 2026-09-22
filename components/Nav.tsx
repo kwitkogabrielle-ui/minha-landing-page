@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 
 const WA = "https://wa.me/5548984730581?text=" + encodeURIComponent("Olá, vim pelo Google e gostaria de agendar uma avaliação.");
 
@@ -27,7 +28,9 @@ export default function Nav() {
   return (
     <nav className={hidden ? "nav-hidden" : ""}>
       <div className="nav-inner">
-        <div className="nav-logo">Dra. <span>Gabrielle</span> Kwitko</div>
+        <a href="#" className="nav-logo" aria-label="Dra. Gabrielle Kwitko — início">
+          <Image src="/images/logo-dra-2-crop.png" alt="Dra. Gabrielle Kwitko" width={670} height={138} priority />
+        </a>
         <div className="nav-links">
           <a href="#servicos">Serviços</a>
           <a href="#sobre">Sobre</a>
