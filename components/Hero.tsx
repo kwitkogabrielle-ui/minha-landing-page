@@ -1,20 +1,20 @@
 import Image from "next/image";
-import { PERFIL_GOOGLE } from "./dados";
+import { PERFIL_GOOGLE, wa } from "./dados";
 
-const WA = "https://wa.me/5548984730581?text=" + encodeURIComponent("Olá, vim pelo Google e gostaria de agendar uma avaliação com a Dra. Gabrielle.");
+const WA = wa("Olá, vim pelo Google e gostaria de agendar uma avaliação com a Dra. Gabrielle.");
 
 
 const WA_SVG = (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
     <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.862L.057 23.867a.5.5 0 00.611.637l6.18-1.617A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.868 0-3.63-.488-5.16-1.342l-.369-.213-3.821.999 1.019-3.71-.232-.38A9.946 9.946 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/>
   </svg>
 );
 
 const carouselItems = [
-  { src: "/images/antes-depois-labios.png",     alt: "Resultado preenchimento labial", tag: "Lábios" },
-  { src: "/images/antes-depois-olheiras.jpg",   alt: "Resultado olheiras",             tag: "Olheiras" },
-  { src: "/images/antes-depois-linhas-expressao-testa.png", alt: "Resultado de tratamento para linhas de expressão na testa", tag: "Linhas de Expressão" },
+  { src: "/images/antes-depois-preenchimento-labial-florianopolis.jpg",   alt: "Antes e depois de preenchimento labial em Florianópolis",   tag: "Lábios" },
+  { src: "/images/antes-depois-preenchimento-olheiras-florianopolis.jpg", alt: "Antes e depois de preenchimento de olheiras em Florianópolis", tag: "Olheiras" },
+  { src: "/images/antes-depois-linhas-de-expressao-testa-florianopolis.jpg", alt: "Antes e depois do tratamento de linhas de expressão na testa", tag: "Linhas de Expressão" },
 ];
 
 /* duplicamos para o loop infinito ser seamless */
@@ -26,18 +26,19 @@ export default function Hero() {
       <div className="hero-text">
         <div className="hero-badge">
           <div className="hero-badge-dot" />
-          <span>Enfermeira Esteta · Florianópolis</span>
+          <span>Enfermeira Esteta · Trindade, Florianópolis</span>
         </div>
 
         <h1 className="hero-title">
-          Realce a sua<br />
-          <em>beleza natural</em><br />
-          com segurança.
+          Harmonização facial<br />
+          em Florianópolis com<br />
+          <em>resultado natural.</em>
         </h1>
 
         <p className="hero-desc">
-          A Dra. Gabrielle Kwitko combina técnica avançada e olhar estético refinado para
-          resultados que valorizam quem você já é — sem exageros, com naturalidade.
+          A Dra. Gabrielle Kwitko, enfermeira esteta, combina técnica avançada e olhar estético
+          refinado em preenchimentos, bioestimuladores e harmonização corporal que valorizam quem
+          você já é — sem exageros, com naturalidade.
         </p>
 
         {/* Mobile only: marquee auto-scroll */}
@@ -55,13 +56,13 @@ export default function Hero() {
         </div>
 
         <div className="hero-btns">
-          <a href={WA} target="_blank" className="btn-primary">
+          <a href={WA} target="_blank" rel="noopener" className="btn-primary">
             {WA_SVG} Agendar Avaliação
           </a>
           <a href="#servicos" className="btn-outline">Ver Tratamentos</a>
         </div>
 
-        <a href={PERFIL_GOOGLE} target="_blank" className="hero-trust">
+        <a href={PERFIL_GOOGLE} target="_blank" rel="noopener" className="hero-trust">
           <span className="hero-stars">★★★★★</span>
           <div className="hero-trust-text">
             <strong>4.9</strong>
@@ -72,8 +73,8 @@ export default function Hero() {
 
       <div className="hero-image">
         <Image
-          src="/images/dra-procedimento.jpg"
-          alt="Dra. Gabrielle Kwitko realizando procedimento"
+          src="/images/dra-gabrielle-kwitko-procedimento-harmonizacao-facial.jpg"
+          alt="Dra. Gabrielle Kwitko, enfermeira esteta, em sua clínica de harmonização facial em Florianópolis"
           fill
           priority
           sizes="(max-width: 768px) 100vw, 45vw"

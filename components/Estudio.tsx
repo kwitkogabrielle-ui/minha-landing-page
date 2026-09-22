@@ -1,25 +1,25 @@
 import Image from "next/image";
 
 const small = [
-  { src: "/images/studio-novo-2.png", alt: "Corredor da clínica" },
-  { src: "/images/studio-novo-3.png", alt: "Sala da clínica" },
-  { src: "/images/studio-novo-4.jpg", alt: "Recepção" },
+  { src: "/images/corredor-clinica-estetica-florianopolis.jpg", alt: "Corredor da clínica de estética da Dra. Gabrielle Kwitko em Florianópolis" },
+  { src: "/images/sala-atendimento-clinica-estetica-florianopolis.jpg", alt: "Sala de atendimento para harmonização facial na clínica em Florianópolis" },
+  { src: "/images/recepcao-clinica-estetica-florianopolis.jpg", alt: "Recepção da clínica de estética no bairro Trindade, Florianópolis" },
 ];
 
 export default function Estudio() {
   return (
     <section id="estudio">
       <div className="estudio-header container">
-        <div className="section-eyebrow"><span>Clínica</span></div>
+        <div className="section-eyebrow"><span>Clínica em Florianópolis</span></div>
         <h2 className="section-title">Ambiente pensado<br />para o seu conforto</h2>
         <p className="section-subtitle" style={{ marginBottom: "2.5rem" }}>
-          Nossa clínica em Florianópolis combina sofisticação e acolhimento em cada detalhe.
+          Nossa clínica no bairro Trindade, em Florianópolis, combina sofisticação e acolhimento em cada detalhe.
         </p>
       </div>
 
       <div className="estudio-grid container">
         <div className="estudio-main">
-          <Image src="/images/studio-placa.png" alt="Consultório da Dra. Gabrielle Kwitko" fill sizes="(max-width: 768px) 100vw, 55vw" style={{ objectFit: "cover" }} />
+          <Image src="/images/clinica-dra-gabrielle-kwitko-trindade-florianopolis.jpg" alt="Porta do consultório da Dra. Gabrielle Kwitko, clínica de estética na Trindade, Florianópolis" fill sizes="(max-width: 768px) 100vw, 55vw" style={{ objectFit: "cover" }} />
         </div>
         {small.map(({ src, alt }) => (
           <div key={src} className="estudio-small">
