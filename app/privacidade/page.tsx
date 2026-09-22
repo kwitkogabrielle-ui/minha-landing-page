@@ -2,10 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Política de Privacidade e Termos de Uso | Dra. Gabrielle Kwitko",
+  title: "Política de Privacidade e Termos de Uso",
   description:
     "Como o site da Dra. Gabrielle Kwitko trata dados pessoais, cookies e mensagens enviadas pelo WhatsApp, conforme a LGPD (Lei nº 13.709/2018).",
-  robots: { index: true, follow: true },
+  alternates: { canonical: "/privacidade" },
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: "/privacidade",
+    title: "Política de Privacidade e Termos de Uso | Dra. Gabrielle Kwitko",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+  },
 };
 
 export default function Privacidade() {
@@ -20,9 +27,9 @@ export default function Privacidade() {
         <h2>1. Quem trata os seus dados</h2>
         <p>
           Este site é mantido por Gabrielle Kwitko, enfermeira esteta inscrita no COREN sob o
-          nº 652.755, com atendimento na R. Delminda Silveira, 827 – sala 206, Agronômica,
-          Florianópolis – SC, CEP 88025-500. O contato para qualquer assunto relacionado a dados
-          pessoais é o WhatsApp <a href="https://wa.me/5548984730581" target="_blank">(48) 98473-0581</a>.
+          nº 652.755, com atendimento na R. Lauro Linhares, 728, Centro Executivo Monchique, Trindade,
+          Florianópolis – SC, CEP 88036-000. O contato para qualquer assunto relacionado a dados
+          pessoais é o WhatsApp <a href="https://wa.me/5548984730581" target="_blank" rel="noopener">(48) 98473-0581</a>.
         </p>
 
         <h2>2. Quais dados coletamos</h2>

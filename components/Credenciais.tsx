@@ -4,11 +4,11 @@ export default function Credenciais() {
   return (
     <section id="credenciais">
       <div className="cred-grid container">
-        <a href={PERFIL_GOOGLE} target="_blank" className="cred-item">
+        <a href={PERFIL_GOOGLE} target="_blank" rel="noopener" className="cred-item">
           <div className="cred-val">4.9★</div>
           <div className="cred-label">Nota no Google</div>
         </a>
-        <a href={PERFIL_GOOGLE} target="_blank" className="cred-item">
+        <a href={PERFIL_GOOGLE} target="_blank" rel="noopener" className="cred-item">
           <div className="cred-val">70+</div>
           <div className="cred-label">Avaliações verificadas</div>
         </a>

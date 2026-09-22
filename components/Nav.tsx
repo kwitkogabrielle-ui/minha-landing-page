@@ -1,8 +1,10 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { wa } from "./dados";
 
-const WA = "https://wa.me/5548984730581?text=" + encodeURIComponent("Olá, vim pelo Google e gostaria de agendar uma avaliação.");
+const WA = wa("Olá, vim pelo Google e gostaria de agendar uma avaliação.");
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -28,24 +30,24 @@ export default function Nav() {
   return (
     <nav className={hidden ? "nav-hidden" : ""}>
       <div className="nav-inner">
-        <a href="#" className="nav-logo" aria-label="Dra. Gabrielle Kwitko — início">
-          <Image src="/images/logo-dra-2-crop.png" alt="Dra. Gabrielle Kwitko" width={670} height={138} priority />
-        </a>
+        <Link href="/" className="nav-logo" aria-label="Dra. Gabrielle Kwitko — página inicial">
+          <Image src="/images/logo-dra-2-crop.png" alt="Dra. Gabrielle Kwitko — Estética Avançada" width={670} height={138} priority />
+        </Link>
         <div className="nav-links">
-          <a href="#servicos">Serviços</a>
-          <a href="#sobre">Sobre</a>
-          <a href="#resultados">Resultados</a>
-          <a href="#localizacao">Contato</a>
-          <a href={WA} target="_blank" className="btn-cta-nav">Agendar avaliação</a>
+          <Link href="/#servicos">Tratamentos</Link>
+          <Link href="/#sobre">Sobre</Link>
+          <Link href="/#resultados">Resultados</Link>
+          <Link href="/#localizacao">Contato</Link>
+          <a href={WA} target="_blank" rel="noopener" className="btn-cta-nav">Agendar avaliação</a>
         </div>
-        <button className="nav-hamburger" onClick={() => setOpen(!open)} aria-label="Menu">☰</button>
+        <button className="nav-hamburger" onClick={() => setOpen(!open)} aria-label="Abrir menu" aria-expanded={open}>☰</button>
       </div>
       <div className={`nav-mobile${open ? " open" : ""}`}>
-        <a href="#servicos" onClick={() => setOpen(false)}>Serviços</a>
-        <a href="#sobre" onClick={() => setOpen(false)}>Sobre</a>
-        <a href="#resultados" onClick={() => setOpen(false)}>Resultados</a>
-        <a href="#localizacao" onClick={() => setOpen(false)}>Contato</a>
-        <a href={WA} target="_blank" className="nav-mobile-cta" onClick={() => setOpen(false)}>Agendar pelo WhatsApp</a>
+        <Link href="/#servicos" onClick={() => setOpen(false)}>Tratamentos</Link>
+        <Link href="/#sobre" onClick={() => setOpen(false)}>Sobre</Link>
+        <Link href="/#resultados" onClick={() => setOpen(false)}>Resultados</Link>
+        <Link href="/#localizacao" onClick={() => setOpen(false)}>Contato</Link>
+        <a href={WA} target="_blank" rel="noopener" className="nav-mobile-cta" onClick={() => setOpen(false)}>Agendar pelo WhatsApp</a>
       </div>
     </nav>
   );
