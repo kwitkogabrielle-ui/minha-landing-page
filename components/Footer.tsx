@@ -24,7 +24,7 @@ export default function Footer() {
       <div className="footer-grid">
         <div>
           <div className="footer-logo">Dra. <span>Gabrielle</span> Kwitko</div>
-          <p className="footer-desc">Especialista em injetáveis e harmonização facial e corporal no bairro Trindade, em Florianópolis, Santa Catarina.</p>
+          <p className="footer-desc">Especialista em injetáveis e harmonização facial e corporal no bairro Agronômica, em Florianópolis, Santa Catarina.</p>
           <p className="footer-desc" style={{ marginTop: "0.75rem" }}>Enfermeira Esteta · {COREN}</p>
           <p className="footer-desc" style={{ marginTop: "0.75rem" }}>{HORARIO.texto}</p>
         </div>

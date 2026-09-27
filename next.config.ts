@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
       { source: "/sobre.html", destination: "/#sobre", permanent: true },
       { source: "/sobre", destination: "/#sobre", permanent: true },
       { source: "/index.html", destination: "/", permanent: true },
+      // Procedimento retirado do site: manda quem vem do Google para a lista de tratamentos.
+      { source: "/tratamentos/harmonizacao-de-mamas-florianopolis", destination: "/tratamentos", permanent: true },
       // Qualquer outra página .html antiga cai na home em vez de dar 404.
       { source: "/:pagina([a-z0-9_-]+)\\.html", destination: "/", permanent: true },
     ];

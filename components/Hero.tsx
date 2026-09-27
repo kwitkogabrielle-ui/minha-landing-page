@@ -14,7 +14,7 @@ const WA_SVG = (
 const carouselItems = [
   { src: "/images/antes-depois-preenchimento-labial-florianopolis.jpg",   alt: "Antes e depois de preenchimento labial em Florianópolis",   tag: "Lábios" },
   { src: "/images/antes-depois-preenchimento-olheiras-florianopolis.jpg", alt: "Antes e depois de preenchimento de olheiras em Florianópolis", tag: "Olheiras" },
-  { src: "/images/antes-depois-linhas-de-expressao-testa-florianopolis.jpg", alt: "Antes e depois do tratamento de linhas de expressão na testa", tag: "Linhas de Expressão" },
+  { src: "/images/antes-depois-linhas-de-expressao-testa-florianopolis.jpg", alt: "Antes e depois do tratamento de linhas de expressão na testa", tag: "Toxina Botulínica" },
 ];
 
 /* duplicamos para o loop infinito ser seamless */
@@ -26,7 +26,7 @@ export default function Hero() {
       <div className="hero-text">
         <div className="hero-badge">
           <div className="hero-badge-dot" />
-          <span>Enfermeira Esteta · Trindade, Florianópolis</span>
+          <span>Enfermeira Esteta · Agronômica, Florianópolis</span>
         </div>
 
         <h1 className="hero-title">

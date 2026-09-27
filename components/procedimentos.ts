@@ -7,13 +7,13 @@ export type Servico = {
   desc: string;
   oque: string;
   finalidade: string;
-  /* Foto de antes e depois do procedimento, quando houver. */
-  resultado?: { src: string; alt: string };
+  /* Foto de antes e depois do procedimento, quando houver. `vertical` = foto em pé (9:16), sem corte. */
+  resultado?: { src: string; alt: string; vertical?: boolean };
 };
 
 export const facial: Servico[] = [
   {
-    icon: "💉", title: "Tratamento de Linhas de Expressão", slug: "tratamento-linhas-de-expressao-florianopolis",
+    icon: "💉", title: "Toxina Botulínica", slug: "tratamento-linhas-de-expressao-florianopolis",
     resultado: { src: "/images/antes-depois-linhas-de-expressao-testa-florianopolis.jpg", alt: "Antes e depois do tratamento de linhas de expressão na testa, feito pela Dra. Gabrielle Kwitko em Florianópolis" },
     desc: "Suavização de rugas dinâmicas na testa, ao redor dos olhos e pescoço com resultado natural.",
     oque: "Aplicação de um ativo injetável em pontos específicos, que relaxa temporariamente os músculos responsáveis pelas rugas de movimento.",
@@ -28,12 +28,14 @@ export const facial: Servico[] = [
   },
   {
     icon: "😊", title: "Preenchimento de Sulco Nasogeniano", slug: "preenchimento-sulco-nasogeniano-florianopolis",
+    resultado: { src: "/images/antes-depois-preenchimento-sulco-nasogeniano-florianopolis.jpg", alt: "Antes e depois de preenchimento de sulco nasogeniano (bigode chinês) com ácido hialurônico em Florianópolis", vertical: true },
     desc: "Suavização do bigode chinês com preenchimento preciso e natural.",
     oque: "Preenchimento com ácido hialurônico nas linhas que vão das laterais do nariz até os cantos da boca.",
     finalidade: "Suavizar o \"bigode chinês\", que se aprofunda com a perda natural de volume e colágeno do rosto.",
   },
   {
     icon: "🫦", title: "Preenchimento de Mento", slug: "preenchimento-de-mento-florianopolis",
+    resultado: { src: "/images/antes-depois-preenchimento-de-mento-florianopolis.jpg", alt: "Antes e depois de preenchimento de mento, com mais projeção do queixo, em Florianópolis", vertical: true },
     desc: "Definição e projeção do queixo para mais equilíbrio e harmonia facial.",
     oque: "Aplicação de ácido hialurônico no queixo para aumentar a projeção e definir o contorno.",
     finalidade: "Equilibrar as proporções entre nariz, lábios e queixo, melhorando o perfil e a harmonia do rosto.",
@@ -59,6 +61,7 @@ export const facial: Servico[] = [
   },
   {
     icon: "👃", title: "Rinomodelação", slug: "rinomodelacao-florianopolis",
+    resultado: { src: "/images/antes-depois-rinomodelacao-florianopolis.jpg", alt: "Antes e depois de rinomodelação com ácido hialurônico, sem cirurgia, em Florianópolis", vertical: true },
     desc: "Correção estética do nariz sem cirurgia, com resultado perceptível já na sessão, conforme avaliação individual.",
     oque: "Aplicação de ácido hialurônico em pontos estratégicos do nariz, sem cortes e sem cirurgia.",
     finalidade: "Disfarçar pequenas imperfeições, como calombo no dorso, ponta caída ou assimetrias. Não diminui o tamanho do nariz.",
@@ -79,13 +82,7 @@ export const corporal: Servico[] = [
     finalidade: "Melhorar a firmeza, a flacidez e o contorno do bumbum, além de suavizar irregularidades.",
   },
   {
-    icon: "🌸", title: "Harmonização de Mamas", slug: "harmonizacao-de-mamas-florianopolis",
-    desc: "Bioestimuladores e preenchedores para firmeza e contorno mamário sem cirurgia — resultados variam conforme avaliação individual.",
-    oque: "Aplicação de bioestimuladores e/ou preenchedores na região das mamas e do colo, sem cirurgia.",
-    finalidade: "Melhorar a firmeza e a qualidade da pele, contribuindo para a sustentação e o contorno das mamas.",
-  },
-  {
-    icon: "💫", title: "Escleroterapia", slug: "escleroterapia-florianopolis",
+    icon: "💫", title: "PEIM-Secagem de Vasinhos", slug: "escleroterapia-florianopolis",
     desc: "Tratamento de varizes e vasinhos realizado em sessões, com avaliação prévia de indicação.",
     oque: "Aplicação de uma substância dentro dos vasinhos, que faz com que eles sejam absorvidos aos poucos pelo organismo.",
     finalidade: "Reduzir vasinhos e pequenas varizes nas pernas, melhorando a aparência da pele. Normalmente são necessárias algumas sessões.",

@@ -132,7 +132,7 @@ export default async function PaginaProcedimento({ params }: Props) {
           <aside className="proc-lateral">
             {p.resultado && (
               <figure className="proc-foto">
-                <div className="proc-foto-img">
+                <div className="proc-foto-img" style={p.resultado.vertical ? { aspectRatio: "9/16" } : undefined}>
                   <Image src={p.resultado.src} alt={p.resultado.alt} fill sizes="(max-width: 900px) 100vw, 360px" style={{ objectFit: "cover" }} />
                 </div>
                 <figcaption>Paciente real, imagem publicada com autorização. Resultados podem variar.</figcaption>
@@ -142,7 +142,7 @@ export default async function PaginaProcedimento({ params }: Props) {
               <strong>Avaliação personalizada</strong>
               <p>
                 A Dra. Gabrielle Kwitko, enfermeira esteta ({COREN}), avalia o seu caso e monta um plano
-                individual na clínica da Trindade, em Florianópolis.
+                individual na clínica da Agronômica, em Florianópolis.
               </p>
               <a href={linkWa} target="_blank" rel="noopener" className="btn-primary">Agendar pelo WhatsApp</a>
             </div>

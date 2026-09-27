@@ -339,7 +339,8 @@ footer { background: #1a0a06; padding: 3rem 5% 1.5rem; }
   /* RESULTADOS */
   #resultados { padding: 3rem 4%; }
   .resultados-header { margin-bottom: 2rem; }
-  .resultados-grid { grid-template-columns: 1fr; gap: 0.75rem; }
+  .resultados-grid { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+  .resultado-label { font-size: 0.8rem; padding: 1.25rem 0.625rem 0.625rem; }
   .resultados-cta .btn-primary { width: 100%; justify-content: center; }
 
   /* ESTÚDIO */
