@@ -85,56 +85,14 @@ export const grupoC: Record<string, ConteudoProcedimento> = {
     ],
   },
 
-  "harmonizacao-de-mamas-florianopolis": {
-    metaTitle: "Harmonização de Mamas em Florianópolis | Dra. Gabrielle",
-    metaDescription:
-      "Harmonização de mamas sem cirurgia em Florianópolis para mais firmeza e qualidade da pele no colo e nas mamas. Agende sua avaliação com a Dra. Gabrielle.",
-    h1: "Harmonização de mamas em Florianópolis",
-    intro: [
-      "A pele das mamas e do colo é fina e sofre bastante com o tempo, com a amamentação, com as variações de peso e com a exposição ao sol. O resultado costuma ser perda de firmeza, flacidez e uma pele mais marcada, com linhas no colo.",
-      "A harmonização de mamas é um tratamento sem cirurgia que usa bioestimuladores e/ou preenchedores para melhorar a firmeza e a qualidade da pele da região. É importante saber desde o início: o foco é devolver sustentação e viço à pele. O tratamento não aumenta o tamanho das mamas e não substitui uma prótese ou uma cirurgia.",
-    ],
-    indicacoes: [
-      "Flacidez leve a moderada na pele das mamas",
-      "Perda de firmeza após gestação, amamentação ou emagrecimento",
-      "Linhas e rugas no colo",
-      "Pele fina, com aspecto envelhecido ou sem viço na região",
-      "Quem busca melhorar a qualidade da pele sem cirurgia",
-    ],
-    sessao: [
-      "Na avaliação, a Dra. Gabrielle examina a pele, o grau de flacidez e conversa com você sobre as suas expectativas. Se o seu objetivo for aumento de volume ou correção de uma queda mais acentuada, ela explica com honestidade que o caminho indicado é outro. Quando o tratamento faz sentido, o plano é montado de forma individual.",
-      "A aplicação é feita em consultório, com anestesia local nos pontos de entrada e uso de cânula. O produto é distribuído de forma estratégica na pele das mamas e do colo. Cada sessão dura em média de 30 a 50 minutos.",
-      "O protocolo costuma envolver algumas sessões, com intervalo de 30 a 60 dias entre elas, de acordo com a resposta da sua pele.",
-    ],
-    resultado: [
-      "Como o efeito vem principalmente do estímulo ao colágeno, a melhora é gradual. A partir do primeiro ou segundo mês, a pele começa a ficar mais firme e com textura mais uniforme, e o resultado continua evoluindo por alguns meses.",
-      "A duração varia de pessoa para pessoa e costuma ficar, em média, entre 12 e 24 meses. Proteção solar diária no colo, hidratação e estabilidade de peso ajudam a manter o resultado por mais tempo. Sessões de manutenção podem ser indicadas na reavaliação.",
-    ],
-    cuidados: [
-      "Fazer as massagens na região conforme orientado, quando o produto exigir",
-      "Usar um sutiã confortável, sem aro, nos primeiros dias",
-      "Evitar atividade física intensa por 24 a 48 horas",
-      "Evitar sol, sauna e calor intenso na região nos primeiros dias",
-      "Usar protetor solar no colo diariamente",
-      "Entrar em contato caso surja dor forte, vermelhidão ou endurecimento que não melhora",
-    ],
-    contraindicacoes: [
-      "Gestantes e lactantes",
-      "Nódulos mamários sem investigação ou exames de rotina das mamas em atraso",
-      "Infecção ou inflamação na pele da região",
-      "Doenças autoimunes em atividade sem liberação médica",
-      "Quem busca aumento de volume ou alternativa à cirurgia plástica",
-    ],
-  },
-
   "escleroterapia-florianopolis": {
-    metaTitle: "Escleroterapia em Florianópolis | Dra. Gabrielle",
+    metaTitle: "PEIM-Secagem de Vasinhos em Florianópolis | Dra. Gabrielle",
     metaDescription:
-      "Escleroterapia em Florianópolis para tratar vasinhos e pequenas varizes nas pernas, em sessões, com avaliação prévia. Agende sua avaliação com a Dra. Gabrielle.",
-    h1: "Escleroterapia em Florianópolis",
+      "PEIM-Secagem de Vasinhos em Florianópolis para tratar vasinhos e pequenas varizes nas pernas, em sessões, com avaliação prévia. Agende sua avaliação com a Dra. Gabrielle.",
+    h1: "PEIM-Secagem de Vasinhos em Florianópolis",
     intro: [
       "Os vasinhos, também chamados de telangiectasias, e as pequenas varizes são muito comuns, principalmente em mulheres. Fatores como genética, hormônios, gestação e passar muitas horas em pé ou sentada favorecem o aparecimento desses vasos avermelhados ou arroxeados nas pernas.",
-      "A escleroterapia é um tratamento feito em consultório que ajuda a reduzir esses vasinhos, deixando a pele das pernas com aparência mais uniforme. É um procedimento rápido, sem cortes, que permite voltar às atividades no mesmo dia.",
+      "O PEIM-Secagem de Vasinhos é um tratamento feito em consultório que ajuda a reduzir esses vasinhos, deixando a pele das pernas com aparência mais uniforme. É um procedimento rápido, sem cortes, que permite voltar às atividades no mesmo dia.",
     ],
     indicacoes: [
       "Vasinhos vermelhos ou arroxeados nas pernas",
@@ -150,7 +108,7 @@ export const grupoC: Record<string, ConteudoProcedimento> = {
     ],
     resultado: [
       "Logo após a aplicação, os vasinhos podem ficar mais evidentes, com pequenos hematomas ou manchas. Isso faz parte do processo. O clareamento acontece aos poucos, ao longo de semanas, e o resultado de cada sessão costuma ficar mais visível entre 4 e 8 semanas.",
-      "Os vasos tratados tendem a não voltar, mas a escleroterapia não impede que novos vasinhos apareçam com o tempo, já que a tendência genética continua. Por isso, muitas pacientes fazem sessões de manutenção. O resultado varia de pessoa para pessoa e depende também dos cuidados após o tratamento.",
+      "Os vasos tratados tendem a não voltar, mas o PEIM não impede que novos vasinhos apareçam com o tempo, já que a tendência genética continua. Por isso, muitas pacientes fazem sessões de manutenção. O resultado varia de pessoa para pessoa e depende também dos cuidados após o tratamento.",
     ],
     cuidados: [
       "Usar meia elástica de compressão pelo período orientado, quando indicado",

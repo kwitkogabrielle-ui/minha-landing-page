@@ -27,8 +27,8 @@ export default function Privacidade() {
         <h2>1. Quem trata os seus dados</h2>
         <p>
           Este site é mantido por Gabrielle Kwitko, enfermeira esteta inscrita no COREN sob o
-          nº 652.755, com atendimento na R. Lauro Linhares, 728, Centro Executivo Monchique, Trindade,
-          Florianópolis – SC, CEP 88036-000. O contato para qualquer assunto relacionado a dados
+          nº 652.755, com atendimento na R. Delminda Silveira, 827, Centro Empresarial Silvio Coelho dos Santos, Agronômica,
+          Florianópolis – SC, CEP 88025-500. O contato para qualquer assunto relacionado a dados
           pessoais é o WhatsApp <a href="https://wa.me/5548984730581" target="_blank" rel="noopener">(48) 98473-0581</a>.
         </p>
 

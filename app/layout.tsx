@@ -26,7 +26,7 @@ export const viewport: Viewport = {
 
 const titulo = "Harmonização Facial em Florianópolis | Dra. Gabrielle Kwitko";
 const descricao =
-  "Dra. Gabrielle Kwitko, enfermeira esteta em Florianópolis (Trindade). Harmonização facial e corporal, preenchimentos, olheiras e bioestimulador com resultado natural.";
+  "Dra. Gabrielle Kwitko, enfermeira esteta em Florianópolis (Agronômica). Harmonização facial e corporal, preenchimentos, olheiras e bioestimulador com resultado natural.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

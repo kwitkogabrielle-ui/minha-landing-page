@@ -12,16 +12,16 @@ export const WA_BASE = "https://wa.me/5548984730581";
 export const wa = (mensagem: string) => `${WA_BASE}?text=${encodeURIComponent(mensagem)}`;
 
 export const ENDERECO = {
-  rua: "R. Lauro Linhares, 728",
-  predio: "Centro Executivo Monchique",
-  bairro: "Trindade",
+  rua: "R. Delminda Silveira, 827",
+  predio: "Centro Empresarial Silvio Coelho dos Santos",
+  bairro: "Agronômica",
   cidade: "Florianópolis",
   uf: "SC",
-  cep: "88036-000",
+  cep: "88025-500",
 };
 
 export const MAPS_URL =
-  "https://www.google.com/maps/search/?api=1&query=R.+Lauro+Linhares+728+Trindade+Florian%C3%B3polis+SC+88036-000";
+  "https://www.google.com/maps/search/?api=1&query=R.+Delminda+Silveira+827+Agron%C3%B4mica+Florian%C3%B3polis+SC+88025-500";
 
 /* Horário de atendimento — manter igual ao Perfil da Empresa no Google. */
 export const HORARIO = {
