@@ -200,8 +200,22 @@ nav {
 #resultados { background: var(--cream); padding: clamp(3rem,8vw,7rem) 5%; }
 .resultados-header { text-align: center; margin-bottom: 3.5rem; }
 .resultados-header .section-eyebrow { justify-content: center; }
-.resultados-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; max-width: 1160px; margin: 0 auto 2.5rem; }
-.resultado-card { position: relative; border-radius: 12px; overflow: hidden; }
+/* Carrossel: todos os cards com a mesma altura; a largura sai da proporção da foto. */
+.carrossel-resultados { --res-h: clamp(420px, 40vw, 540px); max-width: 1160px; margin: 0 auto 2.5rem; }
+.resultados-trilho {
+  display: flex; gap: 1rem; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
+  scrollbar-width: none; cursor: grab; user-select: none; -webkit-user-select: none;
+}
+.resultados-trilho::-webkit-scrollbar { display: none; }
+.resultados-trilho.arrastando { cursor: grabbing; scroll-snap-type: none; scroll-behavior: auto; }
+.resultado-card { position: relative; flex: 0 0 auto; height: var(--res-h); aspect-ratio: 3/4; border-radius: 12px; overflow: hidden; scroll-snap-align: start; }
+.resultado-card.vertical { aspect-ratio: 9/16; }
+.carrossel-setas { display: flex; justify-content: center; gap: 0.75rem; margin-top: 1.25rem; }
+.carrossel-setas button {
+  width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--rose-light); background: var(--white);
+  color: var(--rose-dark); font-size: 1.5rem; line-height: 1; cursor: pointer; transition: background 0.2s, color 0.2s;
+}
+.carrossel-setas button:hover { background: var(--rose); color: var(--white); }
 .resultado-label { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(44,24,16,0.75) 0%, transparent 100%); padding: 1.5rem 1rem 0.875rem; font-family: var(--font-serif); font-size: 0.95rem; font-weight: 600; color: var(--white); font-style: italic; }
 .resultados-cta { text-align: center; }
 
@@ -339,8 +353,8 @@ footer { background: #1a0a06; padding: 3rem 5% 1.5rem; }
   /* RESULTADOS */
   #resultados { padding: 3rem 4%; }
   .resultados-header { margin-bottom: 2rem; }
-  .resultados-grid { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
-  .resultado-label { font-size: 0.8rem; padding: 1.25rem 0.625rem 0.625rem; }
+  .carrossel-resultados { --res-h: min(125vw, 68vh); margin-right: -4%; }
+  .resultados-trilho { gap: 0.625rem; }
   .resultados-cta .btn-primary { width: 100%; justify-content: center; }
 
   /* ESTÚDIO */
