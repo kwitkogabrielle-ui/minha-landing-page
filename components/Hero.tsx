@@ -12,9 +12,12 @@ const WA_SVG = (
 );
 
 const carouselItems = [
-  { src: "/images/antes-depois-preenchimento-labial-florianopolis.jpg",   alt: "Antes e depois de preenchimento labial em Florianópolis",   tag: "Lábios" },
-  { src: "/images/antes-depois-preenchimento-olheiras-florianopolis.jpg", alt: "Antes e depois de preenchimento de olheiras em Florianópolis", tag: "Olheiras" },
-  { src: "/images/antes-depois-linhas-de-expressao-testa-florianopolis.jpg", alt: "Antes e depois do tratamento de linhas de expressão na testa", tag: "Toxina Botulínica" },
+  { src: "/images/antes-depois-preenchimento-labial-2-florianopolis.jpg", alt: "Antes e depois de preenchimento labial em Florianópolis", tag: "Lábios" },
+  { src: "/images/antes-depois-preenchimento-olheiras-2-florianopolis.jpg", alt: "Antes e depois de preenchimento de olheiras em Florianópolis", tag: "Olheiras" },
+  { src: "/images/antes-depois-rinomodelacao-florianopolis.jpg", alt: "Antes e depois de rinomodelação em Florianópolis", tag: "Rinomodelação" },
+  { src: "/images/antes-depois-preenchimento-de-mento-florianopolis.jpg", alt: "Antes e depois de preenchimento de mento em Florianópolis", tag: "Mento" },
+  { src: "/images/antes-depois-preenchimento-sulco-nasogeniano-florianopolis.jpg", alt: "Antes e depois de preenchimento de sulco nasogeniano em Florianópolis", tag: "Sulco Nasogeniano" },
+  { src: "/images/antes-depois-toxina-botulinica-linhas-de-expressao-florianopolis.jpg", alt: "Antes e depois de toxina botulínica para linhas de expressão", tag: "Toxina Botulínica" },
 ];
 
 /* duplicamos para o loop infinito ser seamless */
@@ -48,7 +51,7 @@ export default function Hero() {
           <div className="hero-results-track">
             {marqueeItems.map(({ src, alt, tag }, i) => (
               <div key={i} className="hero-result-card" aria-hidden={i >= carouselItems.length || undefined}>
-                <Image src={src} alt={alt} width={120} height={148} style={{ objectFit: "cover", objectPosition: "center top", display: "block" }} />
+                <Image src={src} alt={alt} fill sizes="110px" style={{ objectFit: "cover" }} />
                 <div className="hero-result-tag">{tag}</div>
               </div>
             ))}

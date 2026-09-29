@@ -14,14 +14,14 @@ export type Servico = {
 export const facial: Servico[] = [
   {
     icon: "💉", title: "Toxina Botulínica", slug: "tratamento-linhas-de-expressao-florianopolis",
-    resultado: { src: "/images/antes-depois-linhas-de-expressao-testa-florianopolis.jpg", alt: "Antes e depois do tratamento de linhas de expressão na testa, feito pela Dra. Gabrielle Kwitko em Florianópolis" },
+    resultado: { src: "/images/antes-depois-toxina-botulinica-linhas-de-expressao-florianopolis.jpg", alt: "Antes e depois de toxina botulínica para linhas de expressão na testa e ao redor dos olhos, feito pela Dra. Gabrielle Kwitko em Florianópolis", vertical: true },
     desc: "Suavização de rugas dinâmicas na testa, ao redor dos olhos e pescoço com resultado natural.",
     oque: "Aplicação de um ativo injetável em pontos específicos, que relaxa temporariamente os músculos responsáveis pelas rugas de movimento.",
     finalidade: "Suavizar e prevenir o aprofundamento de rugas na testa, entre as sobrancelhas e ao redor dos olhos (pés de galinha).",
   },
   {
     icon: "👁️", title: "Preenchimento de Olheiras", slug: "preenchimento-de-olheiras-florianopolis",
-    resultado: { src: "/images/antes-depois-preenchimento-olheiras-florianopolis.jpg", alt: "Antes e depois de preenchimento de olheiras com ácido hialurônico em Florianópolis" },
+    resultado: { src: "/images/antes-depois-preenchimento-olheiras-2-florianopolis.jpg", alt: "Antes e depois de preenchimento de olheiras com ácido hialurônico em Florianópolis", vertical: true },
     desc: "Correção com ácido hialurônico para aspecto descansado e rejuvenescido.",
     oque: "Aplicação de ácido hialurônico logo abaixo dos olhos, preenchendo o sulco que forma a sombra da olheira.",
     finalidade: "Reduzir o aspecto de cansaço e a sombra escura sob os olhos, principalmente quando causada por perda de volume.",
@@ -48,7 +48,7 @@ export const facial: Servico[] = [
   },
   {
     icon: "💋", title: "Preenchimento Labial", slug: "preenchimento-labial-florianopolis",
-    resultado: { src: "/images/antes-depois-preenchimento-labial-florianopolis.jpg", alt: "Antes e depois de preenchimento labial com ácido hialurônico em Florianópolis" },
+    resultado: { src: "/images/antes-depois-preenchimento-labial-2-florianopolis.jpg", alt: "Antes e depois de preenchimento labial com ácido hialurônico, vista de perfil, em Florianópolis", vertical: true },
     desc: "Lábios mais volumosos e definidos, proporcionais ao seu rosto.",
     oque: "Aplicação de ácido hialurônico nos lábios, trabalhando volume, contorno ou hidratação conforme a necessidade.",
     finalidade: "Deixar os lábios mais definidos, simétricos e hidratados, respeitando o formato natural do rosto.",
