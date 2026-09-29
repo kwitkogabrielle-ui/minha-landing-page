@@ -1,4 +1,4 @@
-import { wa, INSTAGRAM } from "./dados";
+import { wa, INSTAGRAM, ENDERECO, MAPS_URL, HORARIO, TELEFONE, TELEFONE_E164, PAGAMENTO } from "./dados";
 
 const WA = wa("Olá, Dra. Gabrielle! Vim pelo Google e gostaria de agendar uma avaliação.");
 const IG = INSTAGRAM;
@@ -31,6 +31,21 @@ export default function CtaFinal() {
             Ver no Instagram
           </a>
         </div>
+
+        <ul className="cta-contato">
+          <li><span aria-hidden="true">📍</span> <a href={MAPS_URL} target="_blank" rel="noopener">{ENDERECO.rua} · {ENDERECO.bairro}, {ENDERECO.cidade} – {ENDERECO.uf}</a></li>
+          <li><span aria-hidden="true">🕘</span> {HORARIO.texto}</li>
+          <li><span aria-hidden="true">💬</span> <a href={`tel:${TELEFONE_E164}`}>{TELEFONE}</a></li>
+        </ul>
+
+        {PAGAMENTO.formas.length > 0 && (
+          <div className="cta-pagamento">
+            <strong>Formas de pagamento</strong>
+            <span>{PAGAMENTO.formas.join(" · ")}</span>
+            {PAGAMENTO.parcelamento && <span>Parcelamento {PAGAMENTO.parcelamento}</span>}
+            {PAGAMENTO.descontoPix && <span className="cta-pix">{PAGAMENTO.descontoPix}</span>}
+          </div>
+        )}
       </div>
     </section>
   );

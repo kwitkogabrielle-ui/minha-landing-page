@@ -13,8 +13,12 @@ export default function Depoimentos() {
     <section id="depoimentos">
       <div className="depoimentos-header container">
         <div className="section-eyebrow"><span>Depoimentos</span></div>
-        <h2 className="section-title">O que dizem as pacientes</h2>
-        <p className="section-subtitle">Nota 4.9 no Google, com mais de 70 avaliações. <a href={PERFIL_GOOGLE} target="_blank" rel="noopener" style={{ color: "var(--rose-dark)", fontWeight: 700 }}>Ver todas →</a></p>
+        <h2 className="section-title">Quem passa pela GK, conta:</h2>
+        <a href={PERFIL_GOOGLE} target="_blank" rel="noopener" className="depoimentos-nota">
+          <span className="depoimentos-estrelas" aria-hidden="true">★★★★★</span>
+          <span><strong>4,9 no Google</strong> | +70 avaliações</span>
+          <span className="depoimentos-ver">Ver todas →</span>
+        </a>
       </div>
 
       <div className="depoimentos-grid container">

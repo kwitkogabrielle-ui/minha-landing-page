@@ -11,18 +11,6 @@ const WA_SVG = (
   </svg>
 );
 
-const carouselItems = [
-  { src: "/images/antes-depois-preenchimento-labial-2-florianopolis.jpg", alt: "Antes e depois de preenchimento labial em Florianópolis", tag: "Lábios" },
-  { src: "/images/antes-depois-preenchimento-olheiras-2-florianopolis.jpg", alt: "Antes e depois de preenchimento de olheiras em Florianópolis", tag: "Olheiras" },
-  { src: "/images/antes-depois-rinomodelacao-florianopolis.jpg", alt: "Antes e depois de rinomodelação em Florianópolis", tag: "Rinomodelação" },
-  { src: "/images/antes-depois-preenchimento-de-mento-florianopolis.jpg", alt: "Antes e depois de preenchimento de mento em Florianópolis", tag: "Mento" },
-  { src: "/images/antes-depois-preenchimento-sulco-nasogeniano-florianopolis.jpg", alt: "Antes e depois de preenchimento de sulco nasogeniano em Florianópolis", tag: "Sulco Nasogeniano" },
-  { src: "/images/antes-depois-toxina-botulinica-linhas-de-expressao-florianopolis.jpg", alt: "Antes e depois de toxina botulínica para linhas de expressão", tag: "Toxina Botulínica" },
-];
-
-/* duplicamos para o loop infinito ser seamless */
-const marqueeItems = [...carouselItems, ...carouselItems];
-
 export default function Hero() {
   return (
     <section id="hero">
@@ -33,30 +21,13 @@ export default function Hero() {
         </div>
 
         <h1 className="hero-title">
-          Harmonização facial<br />
-          em Florianópolis com<br />
-          <em>resultado natural.</em>
+          Harmonização Facial<br />
+          em <em>Florianópolis</em>
         </h1>
 
         <p className="hero-desc">
-          A Dra. Gabrielle Kwitko, enfermeira esteta, combina técnica avançada e olhar estético
-          refinado em preenchimentos, bioestimuladores e harmonização corporal que valorizam quem
-          você já é — sem exageros, com naturalidade.
+          Procedimentos estéticos personalizados para realçar sua beleza com naturalidade.
         </p>
-
-        {/* Mobile only: marquee auto-scroll */}
-        <div className="hero-results-strip">
-          <div className="hero-result-label">Resultados reais</div>
-          <p className="hero-result-aviso">Imagens de pacientes reais, publicadas com autorização. Resultados individuais podem variar.</p>
-          <div className="hero-results-track">
-            {marqueeItems.map(({ src, alt, tag }, i) => (
-              <div key={i} className="hero-result-card" aria-hidden={i >= carouselItems.length || undefined}>
-                <Image src={src} alt={alt} fill sizes="110px" style={{ objectFit: "cover" }} />
-                <div className="hero-result-tag">{tag}</div>
-              </div>
-            ))}
-          </div>
-        </div>
 
         <div className="hero-btns">
           <a href={WA} target="_blank" rel="noopener" className="btn-primary">

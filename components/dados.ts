@@ -37,3 +37,11 @@ export const FACEBOOK = "https://www.facebook.com/profile.php?id=100084080649001
 // Link de compartilhamento do Perfil da Empresa no Google (também entra no "sameAs" dos dados estruturados).
 export const PERFIL_GOOGLE = "https://share.google/ICikgLli9Ipoyzvtp";
 export const PERFIL_GOOGLE_OFICIAL = !PERFIL_GOOGLE.includes("/maps/search/");
+
+/* Formas de pagamento — aparecem no bloco de contato da home e no FAQ.
+   TODO: confirmar com a clínica. Campos vazios não são exibidos. */
+export const PAGAMENTO = {
+  formas: [] as string[],   // ex.: ["Pix", "Cartão de crédito", "Cartão de débito"]
+  parcelamento: "",         // ex.: "em até 10x no cartão"
+  descontoPix: "",          // ex.: "5% de desconto no Pix"
+};

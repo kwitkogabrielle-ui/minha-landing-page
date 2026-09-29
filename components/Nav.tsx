@@ -35,18 +35,20 @@ export default function Nav() {
         </Link>
         <div className="nav-links">
           <Link href="/#servicos">Tratamentos</Link>
-          <Link href="/#sobre">Sobre</Link>
           <Link href="/#resultados">Resultados</Link>
-          <Link href="/#localizacao">Contato</Link>
+          <Link href="/#sobre">Sobre</Link>
+          <Link href="/#faq">Dúvidas</Link>
+          <Link href="/#cta-final">Contato</Link>
           <a href={WA} target="_blank" rel="noopener" className="btn-cta-nav">Agendar avaliação</a>
         </div>
         <button className="nav-hamburger" onClick={() => setOpen(!open)} aria-label="Abrir menu" aria-expanded={open}>☰</button>
       </div>
       <div className={`nav-mobile${open ? " open" : ""}`}>
         <Link href="/#servicos" onClick={() => setOpen(false)}>Tratamentos</Link>
-        <Link href="/#sobre" onClick={() => setOpen(false)}>Sobre</Link>
         <Link href="/#resultados" onClick={() => setOpen(false)}>Resultados</Link>
-        <Link href="/#localizacao" onClick={() => setOpen(false)}>Contato</Link>
+        <Link href="/#sobre" onClick={() => setOpen(false)}>Sobre</Link>
+        <Link href="/#faq" onClick={() => setOpen(false)}>Dúvidas</Link>
+        <Link href="/#cta-final" onClick={() => setOpen(false)}>Contato</Link>
         <a href={WA} target="_blank" rel="noopener" className="nav-mobile-cta" onClick={() => setOpen(false)}>Agendar pelo WhatsApp</a>
       </div>
     </nav>
