@@ -4,12 +4,26 @@ import { wa } from "./dados";
 
 function CategoryLabel({ label }: { label: string }) {
   return (
-    <div className="container" style={{ maxWidth: 1160, margin: "2.5rem auto 1rem" }}>
+    <div className="container" style={{ maxWidth: 1160, margin: "2.5rem auto 1rem", padding: 0 }}>
       <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
         <h3 style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "2.5px", textTransform: "uppercase", color: "var(--rose)" }}>{label}</h3>
         <div style={{ flex: 1, height: 1, background: "var(--border)" }} />
       </div>
     </div>
+  );
+}
+
+/* Card da home: uma linha só, o card inteiro é o link. */
+function ServicoItem({ icon, title, slug, desc }: Servico) {
+  return (
+    <Link href={urlProcedimento(slug)} className="servico-item">
+      <span className="servico-item-icon" aria-hidden="true">{icon}</span>
+      <span className="servico-item-texto">
+        <h4>{title}</h4>
+        <span>{desc}</span>
+      </span>
+      <span className="servico-item-seta" aria-hidden="true">→</span>
+    </Link>
   );
 }
 
@@ -41,7 +55,8 @@ function ServicoCard({ icon, title, slug, desc, oque, finalidade }: Servico) {
   );
 }
 
-/* Na home o título da seção é h2; na página /tratamentos ele é o h1. */
+/* Na home o título da seção é h2 e os cards são compactos (sem "Como funciona");
+   na página /tratamentos o título é o h1 e os cards trazem os detalhes. */
 export default function Servicos({ comoPagina = false }: { comoPagina?: boolean }) {
   const Titulo = comoPagina ? "h1" : "h2";
   return (
@@ -56,14 +71,26 @@ export default function Servicos({ comoPagina = false }: { comoPagina?: boolean 
       </div>
 
       <CategoryLabel label="Harmonização Facial" />
-      <div className="servicos-grid">
-        {facial.map((s) => <ServicoCard key={s.slug} {...s} />)}
-      </div>
+      {comoPagina ? (
+        <div className="servicos-grid">
+          {facial.map((s) => <ServicoCard key={s.slug} {...s} />)}
+        </div>
+      ) : (
+        <div className="servicos-lista">
+          {facial.map((s) => <ServicoItem key={s.slug} {...s} />)}
+        </div>
+      )}
 
       <CategoryLabel label="Harmonização Corporal" />
-      <div className="servicos-grid">
-        {corporal.map((s) => <ServicoCard key={s.slug} {...s} />)}
-      </div>
+      {comoPagina ? (
+        <div className="servicos-grid">
+          {corporal.map((s) => <ServicoCard key={s.slug} {...s} />)}
+        </div>
+      ) : (
+        <div className="servicos-lista">
+          {corporal.map((s) => <ServicoItem key={s.slug} {...s} />)}
+        </div>
+      )}
 
       <div style={{ textAlign: "center", marginTop: "2.5rem" }}>
         <a href={wa("Olá, vim pelo Google e gostaria de saber mais sobre os tratamentos.")} target="_blank" rel="noopener" className="btn-primary">

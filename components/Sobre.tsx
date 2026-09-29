@@ -1,9 +1,17 @@
 import Image from "next/image";
-import { PERFIL_GOOGLE, wa, COREN } from "./dados";
+import { PERFIL_GOOGLE, wa, COREN, ENDERECO, MAPS_URL } from "./dados";
 
 const WA = wa("Olá, Dra. Gabrielle! Vim pelo Google e gostaria de agendar uma avaliação.");
 
-const tags = ["Injetáveis", "Harmonização Facial", "Harmonização Corporal", "Toxina Botulínica", "Bioestimuladores"];
+/* Ficha da profissional. Itens com `valor` vazio não são exibidos.
+   TODO: preencher formação e especializações reais (instituições, ano). Dados concretos
+   sobre a profissional pesam muito no Google para temas de saúde. */
+const ficha = [
+  { rotulo: "Formação", valor: "" },
+  { rotulo: "Especializações", valor: "" },
+  { rotulo: "Atuação", valor: "Toxina botulínica, preenchimentos com ácido hialurônico, bioestimuladores de colágeno e harmonização corporal." },
+  { rotulo: "Registro profissional", valor: `Enfermeira Esteta · ${COREN}` },
+].filter((item) => item.valor);
 
 export default function Sobre() {
   return (
@@ -20,19 +28,23 @@ export default function Sobre() {
         </div>
 
         <div className="sobre-text">
-          <div className="section-eyebrow"><span>Sobre a Dra. Gabrielle Kwitko</span></div>
-          <h2 className="section-title">
-            Técnica e precisão.<br />
-            <em style={{ fontStyle: "italic", color: "var(--rose)" }}>Olhar estético.</em>
-          </h2>
-          {/* TODO: incluir aqui a formação real (pós-graduações, instituições, ano de início na estética).
-              Dados concretos sobre a profissional pesam muito no Google para temas de saúde. */}
-          <p>A Dra. Gabrielle Kwitko é enfermeira esteta ({COREN}) especialista em procedimentos injetáveis e harmonização facial e corporal, com clínica no bairro Agronômica, em Florianópolis, SC.</p>
-          <p>Com formação sólida e atuação dedicada à estética avançada, ela combina técnica apurada com sensibilidade artística para entregar resultados que respeitam a beleza única de cada paciente.</p>
-          <p>Seu diferencial está na personalização: cada tratamento é planejado individualmente, levando em conta proporção, harmonia e o que faz sentido para aquele rosto e aquele corpo.</p>
-          <div className="sobre-tags">
-            {tags.map((tag) => <span key={tag} className="sobre-tag">{tag}</span>)}
-          </div>
+          <div className="section-eyebrow"><span>Sobre a Dra.</span></div>
+          <h2 className="section-title">Dra. Gabrielle Kwitko</h2>
+          <p className="sobre-cargo">Enfermeira Esteta | {COREN}</p>
+          <p>Especialista em procedimentos injetáveis e harmonização facial e corporal.</p>
+          <a href={MAPS_URL} target="_blank" rel="noopener" className="sobre-endereco">
+            <span aria-hidden="true">📍</span> {ENDERECO.rua} · {ENDERECO.bairro}, {ENDERECO.cidade} – {ENDERECO.uf}
+          </a>
+
+          <dl className="sobre-ficha">
+            {ficha.map(({ rotulo, valor }) => (
+              <div key={rotulo}>
+                <dt>{rotulo}</dt>
+                <dd>{valor}</dd>
+              </div>
+            ))}
+          </dl>
+
           <a href={WA} target="_blank" rel="noopener" className="btn-primary">Agendar avaliação</a>
         </div>
       </div>
