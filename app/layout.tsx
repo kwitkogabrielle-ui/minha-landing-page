@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Lato } from "next/font/google";
 import "./globals.css";
 import Consentimento from "@/components/Consentimento";
+import ConversaoWhatsapp from "@/components/ConversaoWhatsapp";
 import { JsonLd, schemaSite } from "@/components/schema";
 import { SITE_URL } from "@/components/dados";
 
@@ -68,6 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         {/* Banner LGPD + Google Tag Manager (só carrega após consentimento) */}
         <Consentimento />
+        <ConversaoWhatsapp />
       </body>
     </html>
   );
